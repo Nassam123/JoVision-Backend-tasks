@@ -1,0 +1,33 @@
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Backend Tasks.exe
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Backend Tasks.deps.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Backend Tasks.runtimeconfig.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Backend Tasks.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Backend Tasks.pdb
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.sourcelink.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets\msbuild.Backend Tasks.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets\msbuild.build.Backend Tasks.props
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Backend Tasks.props
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Backend Tasks.props
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\scopedcss\bundle\Backend Tasks.styles.css
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend .2F0CC91C.Up2Date
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\refint\Backend Tasks.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.pdb
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\ref\Backend Tasks.dll

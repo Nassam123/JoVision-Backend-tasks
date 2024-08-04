@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE143-09E3-45B3-8DAF-85F6DC5B6C61}|Backend Tasks.csproj|c:\\users\\user\\documents\\github\\jovision-backend-tasks\\backend tasks\\controllers\\task44.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE143-09E3-45B3-8DAF-85F6DC5B6C61}|Backend Tasks.csproj|solutionrelative:controllers\\task44.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task44.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task44.cs",
+              "RelativeDocumentMoniker": "Controllers\\Task44.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task44.cs",
+              "RelativeToolTip": "Controllers\\Task44.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T10:13:30.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
