@@ -8,7 +8,7 @@ namespace Task45.Controllers
     [Route("[controller]")]
     public class BirthDateController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("Task45")]
         public IActionResult Get([FromQuery] string name = "Anonymous", [FromQuery] int? year = null, [FromQuery] int? month = null, [FromQuery] int? day = null)
         {
             if (year == null || month == null || day == null)
@@ -39,8 +39,9 @@ namespace Task45.Controllers
             return age;
         }
 
-
-        [HttpGet("Greeter")]
+    }
+    public class GreeterController:ControllerBase {
+        [HttpGet("GreeterTask45")]
         public IActionResult Get([FromQuery] string name = "Anonymous")
         {
             return Ok($"Hello {name}");
