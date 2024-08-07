@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5B2FE143-09E3-45B3-8DAF-85F6DC5B6C61}|Backend Tasks.csproj|c:\\users\\user\\documents\\github\\jovision-backend-tasks\\backend tasks\\controllers\\task48.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE143-09E3-45B3-8DAF-85F6DC5B6C61}|Backend Tasks.csproj|solutionrelative:controllers\\task48.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B2FE143-09E3-45B3-8DAF-85F6DC5B6C61}|Backend Tasks.csproj|c:\\users\\user\\documents\\github\\jovision-backend-tasks\\backend tasks\\controllers\\task47.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B2FE143-09E3-45B3-8DAF-85F6DC5B6C61}|Backend Tasks.csproj|solutionrelative:controllers\\task47.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Task48.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task48.cs",
+              "RelativeDocumentMoniker": "Controllers\\Task48.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task48.cs",
+              "RelativeToolTip": "Controllers\\Task48.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAmwI4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T21:12:34.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Task47.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task47.cs",
               "RelativeDocumentMoniker": "Controllers\\Task47.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task47.cs",
               "RelativeToolTip": "Controllers\\Task47.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAIwHMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T13:38:43.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Task46.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task46.cs",
               "RelativeDocumentMoniker": "Controllers\\Task46.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Controllers\\Task46.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAYwC0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T13:00:41.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T13:00:41.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Task45.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task45.cs",
               "RelativeDocumentMoniker": "Controllers\\Task45.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "Controllers\\Task45.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T10:27:30.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T10:27:30.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Task44.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\Controllers\\Task44.cs",
               "RelativeDocumentMoniker": "Controllers\\Task44.cs",

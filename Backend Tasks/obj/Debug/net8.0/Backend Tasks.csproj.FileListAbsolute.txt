@@ -31,3 +31,4 @@ C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\ne
 C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.pdb
 C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\Backend Tasks.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\obj\Debug\net8.0\ref\Backend Tasks.dll
+C:\Users\User\Documents\GitHub\JoVision-Backend-tasks\Backend Tasks\bin\Debug\net8.0\Backend Tasks.staticwebassets.runtime.json

@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "NwK6J0kRYN8WazoxkQN/gi/umv5Aft0gmM2Link2Jok=",
+  "Hash": "g40cHJqWWlNrIDj6CHjlrABDf1SwF9ozm4/T1Gmij3s=",
   "Source": "Backend Tasks",
   "BasePath": "_content/Backend Tasks",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Backend Tasks\\wwwroot",
+      "Source": "Backend Tasks",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\",
+      "BasePath": "_content/Backend Tasks",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
