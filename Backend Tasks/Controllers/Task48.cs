@@ -173,4 +173,41 @@ namespace Task48.Controllers
             }
         }
     }
+    public class RetrieveController : BaseController
+    {
+        [HttpGet("RetrieveTask48")]
+        public IActionResult Retrieve([FromQuery] string fileName, [FromQuery] string fileOwner)
+        {
+            if (string.IsNullOrEmpty(fileName) || string.IsNullOrEmpty(fileOwner))
+            {
+                return BadRequest("Invalid input data.");
+            }
+
+            var sanitizedFileName = SanitizeFileName(Path.GetFileNameWithoutExtension(fileName));
+            var filePath = Path.Combine(_storagePath, $"{sanitizedFileName}.jpg");
+            var metadataPath = Path.Combine(_storagePath, $"{sanitizedFileName}.json");
+
+            if (!System.IO.File.Exists(filePath) || !System.IO.File.Exists(metadataPath))
+            {
+                return NotFound("File or metadata not found.");
+            }
+
+            var metadata = JsonSerializer.Deserialize<FileMetadata>(System.IO.File.ReadAllText(metadataPath));
+
+            if (metadata.Owner != fileOwner)
+            {
+                return Forbid("You do not have permission to retrieve this file.");
+            }
+
+            try
+            {
+                var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+                return File(fileStream, "application/octet-stream", $"{sanitizedFileName}.jpg");
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error while retrieving the file.");
+            }
+        }
+    }
 }
