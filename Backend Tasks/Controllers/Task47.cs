@@ -45,7 +45,7 @@ namespace Task47.Controllers
 
     public class CreateController : BaseController
     {
-        [HttpPost("CreateTask47")]
+        [HttpPost("Task47")]
         public async Task<IActionResult> Post([FromForm] Upload uploadFile)
         {
             IFormFile? file = uploadFile.File;
@@ -94,7 +94,7 @@ namespace Task47.Controllers
 
     public class DeleteController : BaseController
     {
-        [HttpGet("DeleteTask47")]
+        [HttpGet("Task47")]
         public IActionResult Delete([FromQuery] string fileName, [FromQuery] string fileOwner)
         {
             if (string.IsNullOrEmpty(fileName) || string.IsNullOrEmpty(fileOwner))

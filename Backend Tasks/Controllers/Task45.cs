@@ -41,7 +41,7 @@ namespace Task45.Controllers
 
     }
     public class GreeterController:ControllerBase {
-        [HttpGet("GreeterTask45")]
+        [HttpGet("Task45")]
         public IActionResult Get([FromQuery] string name = "Anonymous")
         {
             return Ok($"Hello {name}");

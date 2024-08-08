@@ -51,7 +51,7 @@ namespace Task46.Controllers
     }
     public class GreeterController:ControllerBase
             {
-        [HttpPost("GreeterTask46")]
+        [HttpPost("Task46")]
         public IActionResult Get([FromBody] string name = "Anonymous")
         {
             return Ok($"Hello {name}");

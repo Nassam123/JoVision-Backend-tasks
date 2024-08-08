@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
-namespace Task48.Controllers
+namespace Task49.Controllers
 {
     public class Upload
     {
@@ -14,6 +14,21 @@ namespace Task48.Controllers
         public string Owner { get; set; }
         public DateTime CreationTime { get; set; }
         public DateTime LastModificationTime { get; set; }
+    }
+    public enum FilterType
+    {
+        ByModificationDate,
+        ByCreationDateDescending,
+        ByCreationDateAscending,
+        ByOwner
+    }
+
+    public class FilterRequest
+    {
+        public DateTime CreationDate { get; set; }
+        public DateTime ModificationDate { get; set; }
+        public string Owner { get; set; }
+        public FilterType FilterType { get; set; }
     }
 
     [ApiController]
@@ -42,7 +57,7 @@ namespace Task48.Controllers
 
     public class CreateController : BaseController
     {
-        [HttpPost("Task48")]
+        [HttpPost("Task49")]
         public async Task<IActionResult> Post([FromForm] Upload uploadFile)
         {
             IFormFile? file = uploadFile.File;
@@ -91,7 +106,7 @@ namespace Task48.Controllers
 
     public class DeleteController : BaseController
     {
-        [HttpGet("Task48")]
+        [HttpGet("Task49")]
         public IActionResult Delete([FromQuery] string fileName, [FromQuery] string fileOwner)
         {
             if (string.IsNullOrEmpty(fileName) || string.IsNullOrEmpty(fileOwner))
@@ -129,7 +144,7 @@ namespace Task48.Controllers
     }
     public class UpdateController : BaseController
     {
-        [HttpPost("Task48")]
+        [HttpPost("Task49")]
         public async Task<IActionResult> Post([FromForm] Upload uploadFile)
         {
             IFormFile? file = uploadFile.File;
@@ -175,7 +190,7 @@ namespace Task48.Controllers
     }
     public class RetrieveController : BaseController
     {
-        [HttpGet("Task48")]
+        [HttpGet("Task49")]
         public IActionResult Retrieve([FromQuery] string fileName, [FromQuery] string fileOwner)
         {
             if (string.IsNullOrEmpty(fileName) || string.IsNullOrEmpty(fileOwner))
@@ -207,6 +222,108 @@ namespace Task48.Controllers
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error while retrieving the file.");
+            }
+        }
+    }
+    public class FilterController : BaseController
+    {
+        [HttpPost("Task49")]
+        public IActionResult Filter([FromForm] FilterRequest filterRequest)
+        {
+            if (filterRequest == null || string.IsNullOrEmpty(filterRequest.Owner) && (filterRequest.FilterType == FilterType.ByOwner))
+            {
+                return BadRequest("Invalid input data.");
+            }
+
+            try
+            {
+                var files = Directory.GetFiles(_storagePath, "*.json")
+                    .Select(f => JsonSerializer.Deserialize<FileMetadata>(System.IO.File.ReadAllText(f)))
+                    .Where(fm => fm != null)
+                    .Select(fm => new { fm.Owner, FileName = Path.GetFileNameWithoutExtension(fm.Owner) + ".jpg", fm.CreationTime, fm.LastModificationTime })
+                    .ToList();
+
+                IEnumerable<object> filteredFiles = null;
+
+                switch (filterRequest.FilterType)
+                {
+                    case FilterType.ByModificationDate:
+                        filteredFiles = files.Where(f => f.LastModificationTime < filterRequest.ModificationDate);
+                        break;
+
+                    case FilterType.ByCreationDateDescending:
+                        filteredFiles = files.Where(f => f.CreationTime > filterRequest.CreationDate)
+                                             .OrderByDescending(f => f.CreationTime);
+                        break;
+
+                    case FilterType.ByCreationDateAscending:
+                        filteredFiles = files.Where(f => f.CreationTime > filterRequest.CreationDate)
+                                             .OrderBy(f => f.CreationTime);
+                        break;
+
+                    case FilterType.ByOwner:
+                        filteredFiles = files.Where(f => f.Owner == filterRequest.Owner);
+                        break;
+
+                    default:
+                        return BadRequest("Invalid filter type.");
+                }
+
+                return Ok(filteredFiles);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(this.ToString());
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error while filtering the files.");
+            }
+        }
+    }
+    public class TransferOwnershipController : BaseController
+    {
+        [HttpGet("Task49")]
+        public IActionResult TransferOwnership([FromQuery] string oldOwner, [FromQuery] string newOwner)
+        {
+            if (string.IsNullOrEmpty(oldOwner) || string.IsNullOrEmpty(newOwner))
+            {
+                return BadRequest("Invalid input data.");
+            }
+
+            try
+            {
+                var files = Directory.GetFiles(_storagePath, "*.json")
+                    .Select(f => new
+                    {
+                        MetadataPath = f,
+                        Metadata = JsonSerializer.Deserialize<FileMetadata>(System.IO.File.ReadAllText(f))
+                    })
+                    .Where(f => f.Metadata != null && f.Metadata.Owner == oldOwner)
+                    .ToList();
+
+                foreach (var file in files)
+                {
+                    file.Metadata.Owner = newOwner;
+                    System.IO.File.WriteAllText(file.MetadataPath, JsonSerializer.Serialize(file.Metadata));
+
+                    var oldFileName = Path.GetFileNameWithoutExtension(file.MetadataPath) + ".jpg";
+                    var newFileName = Path.Combine(_storagePath, SanitizeFileName(newOwner) + ".jpg");
+
+                    if (System.IO.File.Exists(Path.Combine(_storagePath, oldFileName)))
+                    {
+                        System.IO.File.Move(Path.Combine(_storagePath, oldFileName), newFileName);
+                    }
+                }
+
+                var newOwnerFiles = Directory.GetFiles(_storagePath, "*.json")
+                    .Select(f => JsonSerializer.Deserialize<FileMetadata>(System.IO.File.ReadAllText(f)))
+                    .Where(fm => fm != null && fm.Owner == newOwner)
+                    .Select(fm => new { fm.Owner, FileName = Path.GetFileNameWithoutExtension(fm.Owner) + ".jpg", fm.CreationTime, fm.LastModificationTime })
+                    .ToList();
+
+                return Ok(newOwnerFiles);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error while transferring ownership.");
             }
         }
     }

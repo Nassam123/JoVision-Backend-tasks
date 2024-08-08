@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\uploads\\butterfly.jpg",
+      "PackagePath": "staticwebassets\\uploads\\butterfly.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\uploads\\butterfly.json",
+      "PackagePath": "staticwebassets\\uploads\\butterfly.json"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\uploads\\leaves.jpg",
+      "PackagePath": "staticwebassets\\uploads\\leaves.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\uploads\\leaves.json",
+      "PackagePath": "staticwebassets\\uploads\\leaves.json"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\uploads\\puppy.jpg",
+      "PackagePath": "staticwebassets\\uploads\\puppy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\JoVision-Backend-tasks\\Backend Tasks\\wwwroot\\uploads\\puppy.json",
+      "PackagePath": "staticwebassets\\uploads\\puppy.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Backend Tasks.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Backend Tasks.props",
+      "PackagePath": "build\\Backend Tasks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Backend Tasks.props",
+      "PackagePath": "buildMultiTargeting\\Backend Tasks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Backend Tasks.props",
+      "PackagePath": "buildTransitive\\Backend Tasks.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
